@@ -68,7 +68,5 @@ var variable =
 );
   function nuevaLista(){
   var res1=document.getElementById("tarea").value;
-  variable.innerHTML+="<li>"+"<b>" +"Tarea: " +"</b>" + res1+ "</li><br>";
+  info.innerHTML +="<li>" + res1+ "</li><br>";
 };
-
-info();
