@@ -60,8 +60,15 @@ var variable =
     "title": "illo est ratione doloremque quia maiores aut",
     "completed": true
   }
+];
 
-  var info = document.getElementById("tarea");
-  var recorrido = variable.forEach(function(ele){
+  var info = document.getElementById("list");
+  variable.forEach(function(ele){
   info.innerHTML += '<li>'+ ele.title + '</li><br>';}
 );
+  function nuevaLista(){
+  var res1=document.getElementById("tarea").value;
+  variable.innerHTML+="<li>"+"<b>" +"Tarea: " +"</b>" + res1+ "</li><br>";
+};
+
+info();
